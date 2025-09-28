@@ -32,12 +32,10 @@ const Login = ({ setToken }) => {
       return;
     }
 
-    // Muvaffaqiyatli login
     setError("");
     setLogin("");
     setPassword("");
 
-    // Tokenni setToken orqali yangilash
     setToken("true");
     navigate("/");
   };
@@ -48,7 +46,6 @@ const Login = ({ setToken }) => {
         data-aos="fade-up" 
         className="bg-white shadow-lg rounded-2xl w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-md p-6 sm:p-8"
       >
-        {/* Title */}
         <h1
           data-aos="zoom-in" 
           className="text-2xl sm:text-3xl font-bold text-center text-blue-600 mb-6"
@@ -56,7 +53,6 @@ const Login = ({ setToken }) => {
           Login
         </h1>
 
-        {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
           {error && (
             <div
@@ -67,7 +63,6 @@ const Login = ({ setToken }) => {
             </div>
           )}
 
-          {/* Login Input */}
           <div data-aos="fade-right">
             <label className="block mb-1 font-medium text-gray-700 text-sm sm:text-base">
               Login
@@ -108,7 +103,6 @@ const Login = ({ setToken }) => {
             </div>
           </div>
 
-          {/* Submit Button */}
           <button
             data-aos="flip-up"
             type="submit"
@@ -118,7 +112,6 @@ const Login = ({ setToken }) => {
           </button>
         </form>
 
-        {/* Register Link */}
         <p
           data-aos="fade-up"
           className="text-center mt-4 text-gray-600 text-sm sm:text-base"

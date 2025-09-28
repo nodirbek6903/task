@@ -30,7 +30,6 @@ const Register = ({ setToken }) => {
 
     localStorage.setItem("users", JSON.stringify(updatedUsers));
 
-    // Token yaratish
     setToken("true");
 
     setUsername("");
@@ -82,7 +81,6 @@ const Register = ({ setToken }) => {
             </div>
           </div>
 
-          {/* Password */}
           <div data-aos="fade-left">
             <label className="block mb-1 font-medium text-gray-700 text-sm sm:text-base">
               Parol
@@ -106,7 +104,6 @@ const Register = ({ setToken }) => {
             </div>
           </div>
 
-          {/* Submit Button */}
           <button
             data-aos="flip-up"
             type="submit"
@@ -116,7 +113,6 @@ const Register = ({ setToken }) => {
           </button>
         </form>
 
-        {/* Link */}
         <p
           data-aos="fade-up"
           className="text-center mt-4 text-gray-600 text-sm sm:text-base"
